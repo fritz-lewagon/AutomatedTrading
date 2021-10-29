@@ -3,7 +3,6 @@ import requests
 from dotenv import load_dotenv
 
 
-
 class RequestHandler:
     load_dotenv()
     url_data: str = os.environ.get("BASE_URL_DATA")
@@ -11,11 +10,6 @@ class RequestHandler:
     auth_url: str = os.environ.get("AUTH_URL")
 
     def get_token(self, endpoint: str, data):
-        """
-        :param data:
-        :param endpoint:
-        :return: access token as String
-        """
         response = requests.post(self.auth_url + endpoint, data)
         return response
 
