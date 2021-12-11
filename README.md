@@ -1,5 +1,8 @@
 # LemonMarkets
 
+!! currently under re-construction and not finsihed !!
+
+
 Building my first algorithm based on the lemon-market API (https://www.lemon.markets/de-de)
 
 Overview of the project:
